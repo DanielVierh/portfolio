@@ -139,7 +139,7 @@ main {
     text-align: center;
 }
 
-.right h2 {
+h2 {
     font-size: 3rem;
     padding: 1rem;
 }
@@ -147,9 +147,10 @@ main {
 .right ul li,
 .left ul li {
     list-style-type: none;
-    padding: 5px;
+    padding: 15px;
     margin: 5px;
-    background-color: #5e5d5c;
+    /* background-color: #5e5d5c; */
+    text-align: center;
     border-radius: 10px;
     font-weight: bold;
 }
@@ -171,16 +172,24 @@ main {
     margin: 20px auto;
 }
 
+.card p {
+    text-align: left;
+    padding-left: 10px;
+}
+
 .card h3 {
     text-decoration: underline;
     color: aqua;
+    font-size: 2rem;
 }
 
 .projImg {
-    width: 95%;
-    border-radius: 10%;
+    width: 50%;
+    border-radius: 50px;
     margin: 20px;
-    padding: 10px;
+    /* padding: 10px; */
+    box-shadow: 5px 5px 25px black;
+    /* background-color: rgba(255, 255, 255, 0); */
 }
 
 .buttonGotoProj {
@@ -243,5 +252,9 @@ Media Querys
     .left img {
         width: 110%;
         margin: auto;
+    }
+
+    .projImg {
+        width: 90%;
     }
 }
