@@ -114,6 +114,13 @@ main {
     width: 100%;
 }
 
+.projectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .left {
     width: 50%;
     text-align: center;
@@ -160,9 +167,8 @@ main {
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     -moz-backdrop-filter: blur(30px);
-    width: 100%;
     border-radius: 15px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .card h3 {
@@ -172,7 +178,7 @@ main {
 
 .projImg {
     width: 95%;
-    border-radius: 15px;
+    border-radius: 10%;
     margin: 20px;
     padding: 10px;
 }
