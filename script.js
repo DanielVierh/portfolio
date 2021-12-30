@@ -24,6 +24,7 @@ function blurring() {
 
 function showMobileNavbar() {
     if (mobileNavBarIsVisible === false) {
+        mobileNavbar.hidden = false;
         lastYPos = window.pageYOffset;
         window.scrollTo(0, 0);
         mobileNavBarIsVisible = true;
@@ -32,5 +33,8 @@ function showMobileNavbar() {
         mobileNavBarIsVisible = false;
         mobileNavbar.classList.remove('active');
         window.scrollTo(0, lastYPos);
+        setTimeout(() => {
+            mobileNavbar.hidden = true;
+        }, 1000);
     }
 }
