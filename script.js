@@ -38,3 +38,15 @@ function showMobileNavbar() {
         }, 1000);
     }
 }
+
+// Vue
+
+const app = Vue.createApp({
+    data: function () {
+        return {
+            projects: projects, // Aus projects.JS Datei
+        };
+    },
+});
+
+const vm = app.mount('#app');

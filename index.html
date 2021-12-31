@@ -109,165 +109,37 @@
                         </div>
                     </article>
                 </section>
-
                 <section>
                     <article>
                         <h2>My own projects</h2>
-
-                        <div class="projectContainer">
-                            <div class="card">
-                                <img
-                                    id="imgProj"
-                                    class="projImg"
-                                    src="assets/projekte/foodtracker.png"
-                                    alt="countdown"
-                                />
-                                <h3 id="titleProj">Food-Tracker</h3>
-                                <p id="descrProj">
-                                    A mobile Web-App to track eaten food and
-                                    burned calories.<br /><br />
-                                    -Set up your own goals
-                                    <br />
-                                    -Increase the local Storage Database<br />
-                                    -Statistics of your progress<br />
-                                    -Plan the next day <br />
-                                    -Change the color-theme
-                                </p>
-                                <ul class="tecList">
-                                    <li>-HTML</li>
-                                    <li>-CSS</li>
-                                    <li>-JavaScript</li>
-                                    <li>-LocalStorage</li>
-                                </ul>
-                                <a
-                                    href="https://danielvierh.github.io/Food-Tracker/"
-                                    target="blanc"
-                                    class="buttonGotoProj"
-                                    >OPEN</a
-                                >
-                            </div>
-
-                            <div class="card">
-                                <img
-                                    id="imgProj"
-                                    class="projImg"
-                                    src="assets/projekte/countdown.jpg"
-                                    alt="countdown"
-                                />
-                                <h3 id="titleProj">Countdown APP</h3>
-                                <p id="descrProj">
-                                    A crossplattform Countdown App.
-                                </p>
-                                <ul class="tecList">
-                                    <li>-HTML / CSS / JavaScript</li>
-                                    <li>-jQuery-Mobile</li>
-                                    <li>-LocalStorage</li>
-                                </ul>
-                                <a
-                                    href="https://danielvierh.github.io/countdown-app/"
-                                    target="blanc"
-                                    class="buttonGotoProj"
-                                    >OPEN</a
-                                >
-                            </div>
-
-                            <div class="card">
-                                <img
-                                    id="imgProj"
-                                    class="projImg"
-                                    src="assets/projekte/memory.jpg"
-                                    alt="countdown"
-                                />
-                                <h3 id="titleProj">Memory Game</h3>
-                                <p id="descrProj">
-                                    A crossplattform memory Game with integrated
-                                    highscore.
-                                </p>
-                                <ul class="tecList">
-                                    <li>-HTML / CSS / JavaScript</li>
-                                    <li>-LocalStorage</li>
-                                </ul>
-                                <a
-                                    href="https://danielvierh.github.io/memory-game/"
-                                    target="blanc"
-                                    class="buttonGotoProj"
-                                    >OPEN</a
-                                >
-                            </div>
-
-                            <div class="card">
-                                <img
-                                    id="imgProj"
-                                    class="projImg"
-                                    src="assets/projekte/wetter2.jpg"
-                                    alt="weather"
-                                />
-                                <h3 id="titleProj">Weather App</h3>
-                                <p id="descrProj">
-                                    A crossplattform weather app with an api
-                                    connection to openweather.
-                                </p>
-                                <ul class="tecList">
-                                    <li>-HTML / CSS / JavaScript</li>
-                                    <li>-Rest-API</li>
-                                    <li>-LocalStorage</li>
-                                </ul>
-                                <a
-                                    href="https://danielvierh.github.io/wetter/"
-                                    target="blanc"
-                                    class="buttonGotoProj"
-                                    >OPEN</a
-                                >
-                            </div>
-
-                            <div class="card">
-                                <img
-                                    id="imgProj"
-                                    class="projImg"
-                                    src="assets/projekte/mentalMath.jpg"
-                                    alt="mentalMath"
-                                />
-                                <h3 id="titleProj">Mental Math</h3>
-                                <p id="descrProj">
-                                    A crossplattform app to imporove your mental
-                                    math skills.
-                                </p>
-                                <ul class="tecList">
-                                    <li>-HTML / CSS / JavaScript</li>
-                                    <li>-jQuery-Mobile</li>
-                                </ul>
-                                <a
-                                    href="https://danielvierh.github.io/mentalMath/"
-                                    target="blanc"
-                                    class="buttonGotoProj"
-                                    >OPEN</a
-                                >
-                            </div>
-
-                            <div class="card">
-                                <img
-                                    id="imgProj"
-                                    class="projImg"
-                                    src="assets/projekte/hangman.jpg"
-                                    alt="hangman"
-                                />
-                                <h3 id="titleProj">Hangman</h3>
-                                <p id="descrProj">
-                                    A crossplattform game, where you have to
-                                    guess a word.
-                                </p>
-                                <a
-                                    href="https://danielvierh.github.io/hangman/"
-                                    target="blanc"
-                                    class="buttonGotoProj"
-                                    >OPEN</a
-                                >
+                        <div id="app">
+                            <div class="projectContainer">
+                                <!-- Project Card -->
+                                <div class="card" v-for="project in projects">
+                                    <img
+                                        id="imgProj"
+                                        class="projImg"
+                                        v-bind:src="project.img"
+                                        alt="img"
+                                    />
+                                    <h3 id="titleProj">{{project.title}}</h3>
+                                    <div class="overview">
+                                        <h3>{{project.title}}</h3>
+                                        <p v-html="project.desc"></p>
+                                        <br />
+                                        <a
+                                            v-bind:href="project.link"
+                                            target="blanc"
+                                            class="buttonGotoProj"
+                                            >Open In Browser</a
+                                        >
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </article>
                 </section>
             </main>
-
             <aside hidden>
                 <ul>
                     <li>Skills</li>
@@ -280,6 +152,8 @@
             <footer></footer>
         </div>
 
+        <script src="https://unpkg.com/vue@3.1.5"></script>
+        <script src="projects.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
