@@ -117,12 +117,11 @@
                                 <!-- Project Card -->
                                 <div class="card" v-for="project in projects">
                                     <img
-                                        id="imgProj"
                                         class="projImg"
                                         v-bind:src="project.img"
                                         alt="img"
                                     />
-                                    <h3 id="titleProj">{{project.title}}</h3>
+                                    <h3>{{project.title}}</h3>
                                     <div class="overview">
                                         <h3>{{project.title}}</h3>
                                         <p v-html="project.desc"></p>

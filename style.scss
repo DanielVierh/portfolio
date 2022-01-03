@@ -249,19 +249,6 @@ h2 {
     /* background-color: rgba(255, 255, 255, 0); */
 }
 
-// .tecList {
-//     margin: 5px;
-//     padding: 5px;
-//     background-color: rgba(255, 255, 0, 0.39);
-//     border-radius: 5px;
-//     border: 1px dotted black;
-//     font-size: 0.9rem;
-//     font-weight: bold;
-//     text-align: left;
-//     color: #042c3b;
-//     list-style: none;
-// }
-
 aside {
     position: absolute;
     z-index: 5;
@@ -335,5 +322,6 @@ Media Querys
 
     .projImg {
         width: 90%;
+        margin: auto;
     }
 }
