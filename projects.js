@@ -23,7 +23,7 @@ const projects = [
     {
         id: 4,
         title: 'Food Tracker',
-        desc: 'A mobile Web-App to track eaten food and burned calories.<br /><br /> ',
+        desc: 'A mobile Web-App to track eaten food and burned calories.<br /><br />Notice: The best user experience is on mobile device ',
         link: 'https://danielvierh.github.io/Food-Tracker/',
         img: 'assets/projekte/foodtrackerv2.png',
     },
