@@ -181,8 +181,9 @@ h2 {
 
 .card {
   width: 300px;
+  height: 440px;
   margin: 1rem;
-  background-color: var(--secondary-color);
+  background-color: #096483;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -230,7 +231,7 @@ h2 {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 250px;
+  height: 70%;
   border-radius: 10px;
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
@@ -271,12 +272,8 @@ h2 {
 
 .projImg {
   width: 50%;
-  border-radius: 50px;
   margin: 20px;
-  /* padding: 10px; */
-  -webkit-box-shadow: 5px 5px 25px black;
-          box-shadow: 5px 5px 25px black;
-  /* background-color: rgba(255, 255, 255, 0); */
+  background: #096483;
 }
 
 aside {
@@ -352,7 +349,7 @@ Media Querys
     margin: auto;
   }
   .projImg {
-    width: 90%;
+    width: 60%;
     margin: auto;
   }
 }
