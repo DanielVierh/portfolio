@@ -79,14 +79,6 @@ nav {
   background: black;
 }
 
-@supports ((-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))) {
-  nav {
-    background: rgba(0, 0, 0, 0.8);
-    -webkit-backdrop-filter: blur(20px);
-            backdrop-filter: blur(20px);
-  }
-}
-
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,6 +99,20 @@ nav ul li {
   text-align: center;
   cursor: pointer;
   padding: 0.4rem;
+}
+
+nav ul li:hover {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  text-decoration: underline;
+}
+
+@supports ((-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))) {
+  nav {
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
 }
 
 /*
@@ -174,7 +180,6 @@ h2 {
   list-style-type: none;
   padding: 15px;
   margin: 5px;
-  /* background-color: #5e5d5c; */
   text-align: center;
   border-radius: 10px;
   font-weight: bold;
