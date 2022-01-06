@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: monospace;
-    transition: 0.5s all;
 }
 
 // Lightmode
@@ -24,7 +23,7 @@
     --theme-cardBackgroundColor: #4a4d4e;
     --theme-cardForegroundColor: yellow;
     --theme-toggleBackground: white;
-    --theme-toggleRoundColor: rgb(0, 247, 255);
+    --theme-toggleRoundColor: #096483;
 }
 
 // Theme Switcher
@@ -108,6 +107,22 @@ section {
     width: 90%; /* von branch breitereSection */
 }
 
+.skillIconDescrContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#logoImg{
+    width: 15px;
+    height:15px ;
+    border-radius: 0px;
+    border: none;
+    margin: 5px;
+}
+
 /*
 ###################################
 Navbar
@@ -128,24 +143,34 @@ nav {
         display: flex;
         justify-content: space-evenly;
         padding: 0.4rem;
+        list-style-type: none;
     }
 
-    ul li {
-        list-style-type: none;
+
+
+    ul li a {
+
         display: inline-block;
         margin: 10px;
         color: white;
-        width: 20%;
+        width: 100%;
         max-width: 60px;
         text-align: center;
         cursor: pointer;
         padding: 0.4rem;
     }
 
-    ul li:hover {
+    ul li a:hover {
         transition: 1s ease;
         border-bottom: 2px solid white;
     }
+
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
 @supports (backdrop-filter: blur(30px)) {
@@ -199,6 +224,7 @@ main {
 }
 
 h2 {
+    margin-top: 70px;
     font-size: 3rem;
     padding: 1rem;
 }
@@ -333,18 +359,18 @@ aside.active ul {
 
 aside.active li {
     margin: 2rem;
-    width: 60%;
-    background-color: rgba(53, 53, 53, 0.301);
     border-radius: 10px;
     padding: 5px;
     transition: 1s ease-in;
+    color: white;
 }
 
 .contactContainer {
     margin: auto;
     background-color: rgba(255, 255, 255, 0.884);
     height: 100px;
-    width: 60%;
+    width: 80%;
+    max-width: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;

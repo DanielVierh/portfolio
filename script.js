@@ -2,6 +2,9 @@ const loadText = document.querySelector('.loading-text');
 const bg = document.querySelector('.mainContainer');
 const mobileNavbar = document.querySelector('aside');
 const toggleSwitch = document.getElementById("checkbox");
+//  mobileNavBackground = document.getElementById("mobileNavBackground");
+
+
 
 
 // Switch Theme
@@ -44,13 +47,18 @@ function showMobileNavbar() {
         mobileNavBarIsVisible = true;
         mobileNavbar.classList.add('active');
     } else {
-        mobileNavBarIsVisible = false;
-        mobileNavbar.classList.remove('active');
+        hideMobileNavBackground();
         window.scrollTo(0, lastYPos);
         setTimeout(() => {
             mobileNavbar.hidden = true;
         }, 1000);
     }
+}
+
+mobileNavbar.addEventListener("click", hideMobileNavBackground);
+function hideMobileNavBackground() {
+    mobileNavBarIsVisible = false;
+    mobileNavbar.classList.remove('active');
 }
 
 // Vue

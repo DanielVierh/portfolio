@@ -15,16 +15,16 @@
         <title>Dan´s Portfolio</title>
     </head>
     <body>
-        <!-- <section class="bg"></section> -->
         <div class="loading-text">0%</div>
         <nav>
             <div class="contHamburger" onclick="showMobileNavbar()">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="naviButtons">
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li><a href="#" onclick="window.scrollTo(0, 0);"><i class="fas fa-home"></i></a></li>
+                <li> <a href="#sectionSkills">Skills</a> </li>
+                <li><a href="#sectionProjects">Projects</a></li>
+                <li> <a href="#sectionContact">Contact</a></li>
 
             </ul>
             <!-- Theme Switch -->
@@ -55,7 +55,7 @@
                     </article>
                 </section>
 
-                <section>
+                <section id="sectionSkills">
                     <article>
                         <h2>Skills</h2>
                         <div class="dualContainer">
@@ -83,8 +83,10 @@
                                         CSS3 / Sass
                                     </li>
                                     <li>
-                                        <i class="fas fa-code"></i>
-                                        TypeScript
+                                        <div class="skillIconDescrContainer">
+                                            <img src="assets/Logos/ts.png" alt="ts" id="logoImg">
+                                            TypeScript
+                                        </div>
                                     </li>
                                     <li>
                                         <i
@@ -98,15 +100,14 @@
                             <div class="right">
                                 <ul>
                                     <li>
-                                        <i
-                                            class="fas fa-file-code"
-                                            style="color: #9b4993"
-                                        ></i>
-                                        C#
+                                        <div class="skillIconDescrContainer">
+                                            <img src="assets/Logos/csharp.png" alt="csharp" id="logoImg">
+                                            C#
+                                        </div>
                                     </li>
                                     <li>
                                         <i class="fas fa-code"></i>
-                                        Visual Basic (VBA)
+                                        Visual Basic / VBA
                                     </li>
                                     <li>
                                         <i class="fab fa-git-alt"></i>
@@ -117,13 +118,19 @@
                                         <i class="fas fa-code"></i>
                                         jQuery
                                     </li>
+                                    <li>
+                                        <div class="skillIconDescrContainer">
+                                            <img src="assets/Logos/visualStudio.png" alt="vsc" id="logoImg">
+                                            Visual Studio (Code)
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </article>
                 </section>
                 <!-- Projekte -->
-                <section>
+                <section  id="sectionProjects">
                     <article>
                         <h2>My own Projects</h2>
                         <div id="app">
@@ -152,7 +159,7 @@
                     </article>
                 </section>
                 <!-- Kontakt -->
-                <section>
+                <section id="sectionContact">
                     <h2>Contact</h2>
                     <div class="contactContainer">
                         <a href="https://www.xing.com/"
@@ -177,12 +184,12 @@
                     </div>
                 </section>
             </main>
-            <aside hidden>
+            <aside hidden id="mobileNavBackground">
                 <ul>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+                    <li><a href="#" onclick="window.scrollTo(0, 0);"><i class="fas fa-home"></i></a></li>
+                    <li> <a href="#sectionSkills">Skills</a> </li>
+                    <li><a href="#sectionProjects">Projects</a></li>
+                    <li> <a href="#sectionContact">Contact</a></li>
                 </ul>
             </aside>
 
