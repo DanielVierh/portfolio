@@ -33,7 +33,6 @@ function blurring() {
     if (load > 99) {
         clearInterval(intv);
     }
-
     loadText.innerText = `${load}%`;
     bg.style = `filter: blur(${100 - load}px)`;
     loadText.style.opacity = `${(100 - load) / 100}`;

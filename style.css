@@ -4,7 +4,7 @@
   font-family: monospace;
 }
 
-[data-theme="light"] {
+[data-theme='light'] {
   --theme-mainBackgroundColor: linear-gradient(to right, #0a85ae, #042c3b);
   --theme-cardBackgroundColor: #096483;
   --theme-cardForegroundColor: aqua;
@@ -12,8 +12,8 @@
   --theme-toggleRoundColor: black;
 }
 
-[data-theme="dark"] {
-  --theme-mainBackgroundColor: linear-gradient(to right,#000000,#111212);
+[data-theme='dark'] {
+  --theme-mainBackgroundColor: linear-gradient(to right, #000000, #111212);
   --theme-cardBackgroundColor: #4a4d4e;
   --theme-cardForegroundColor: yellow;
   --theme-toggleBackground: white;
@@ -38,12 +38,12 @@
 
 .slider::before {
   background-color: var(--theme-toggleRoundColor);
-  content: "";
+  content: '';
   left: 13%;
   top: 13%;
   position: absolute;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -122,8 +122,8 @@ section {
 }
 
 #logoImg {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 0px;
   border: none;
   margin: 5px;
@@ -165,6 +165,7 @@ nav ul li a {
   text-align: center;
   cursor: pointer;
   padding: 0.4rem;
+  font-size: 1.2rem;
 }
 
 nav ul li a:hover {
@@ -249,12 +250,16 @@ h2 {
 
 .right ul li,
 .left ul li {
+  font-size: 1.5rem;
   list-style-type: none;
   padding: 15px;
-  margin: 5px;
+  margin-left: 30px;
   text-align: center;
   border-radius: 10px;
   font-weight: bold;
+  background-color: var(--theme-cardBackgroundColor);
+  border: 1px solid white;
+  min-height: 30px;
 }
 
 .contHamburger {
@@ -556,6 +561,14 @@ Media Querys
   .projImg {
     width: 60%;
     margin: auto;
+  }
+  .right ul li,
+  .left ul li {
+    font-size: 0.9rem;
+  }
+  #logoImg {
+    width: 15px;
+    height: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
