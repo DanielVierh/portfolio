@@ -9,7 +9,7 @@ const projects = [
     {
         id: 2,
         title: 'Memory Game',
-        desc: 'A crossplattform memory Game with integrated highscore. <br> Created with Html5, CSS3, JavaScript',
+        desc: 'A crossplattform memory Game. <br> Created with Html5, CSS3, JavaScript',
         link: 'https://danielvierh.github.io/memory-game/',
         img: 'assets/projekte/memory.png',
     },

@@ -82,9 +82,9 @@ nav {
         list-style-type: none;
         display: inline-block;
         margin: 10px;
-        background-color: #5e5d5c;
+        // background-color: #5e5d5c;
         color: white;
-        border-radius: 10px;
+        // border-radius: 10px;
         width: 20%;
         text-align: center;
         cursor: pointer;
@@ -93,7 +93,7 @@ nav {
 
     ul li:hover {
         transition: 1s ease;
-        text-decoration: underline;
+        border-bottom: 2px solid white;
     }
 }
 
@@ -287,6 +287,76 @@ aside.active li {
     border-radius: 10px;
     padding: 5px;
     transition: 1s ease-in;
+}
+
+.contactContainer {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.884);
+    height: 100px;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.icon {
+    font-size: 5rem;
+    color: white;
+
+    &:active {
+        color: white;
+    }
+
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+.begrTextfield{
+    display: flex;
+    transform-origin: 70% 70%;
+}
+
+.shake {
+    font-size: 3rem;
+    animation: shakeAnimation 8s infinite ;
+    //
+}
+
+
+@keyframes shakeAnimation {
+
+    0% {
+        transform: rotate(0.0deg);
+
+    }
+    10% {
+        transform: rotate(60.0deg);
+        text-shadow:10px 10px 25px black;
+
+    }
+    20% {
+        transform: rotate(40.0deg);
+
+    }
+    30% {
+        transform: rotate(60.0deg);
+        text-shadow:10px 10px 25px black;
+
+    }
+    40% {
+        transform: rotate(-12.0deg);
+    }
+    50% {
+        transform: rotate(10.0deg);
+    }
+    60% {
+        transform: rotate(0.0deg);
+    }
+    100% {
+        transform: rotate(0.0deg);
+    }
 }
 
 /*
