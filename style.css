@@ -450,26 +450,26 @@ aside.active li {
             transform: rotate(0deg);
   }
   10% {
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
     text-shadow: 10px 10px 25px black;
   }
   20% {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
   }
   30% {
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
     text-shadow: 10px 10px 25px black;
   }
   40% {
-    -webkit-transform: rotate(-12deg);
-            transform: rotate(-12deg);
-  }
-  50% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
   }
   60% {
     -webkit-transform: rotate(0deg);
@@ -487,26 +487,26 @@ aside.active li {
             transform: rotate(0deg);
   }
   10% {
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
     text-shadow: 10px 10px 25px black;
   }
   20% {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
   }
   30% {
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg);
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
     text-shadow: 10px 10px 25px black;
   }
   40% {
-    -webkit-transform: rotate(-12deg);
-            transform: rotate(-12deg);
-  }
-  50% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
   }
   60% {
     -webkit-transform: rotate(0deg);
