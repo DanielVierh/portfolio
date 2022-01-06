@@ -1,6 +1,20 @@
 const loadText = document.querySelector('.loading-text');
 const bg = document.querySelector('.mainContainer');
 const mobileNavbar = document.querySelector('aside');
+const toggleSwitch = document.getElementById("checkbox");
+
+
+// Switch Theme
+toggleSwitch.addEventListener("change",  switchTheme, true);
+
+function switchTheme(e) {
+    if(e.target.checked) {
+
+        document.documentElement.setAttribute('data-theme', 'light');
+    }else{
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+}
 
 let lastYPos = 10;
 let mobileNavBarIsVisible = false;
