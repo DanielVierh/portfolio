@@ -33,7 +33,7 @@
 .slider{
     position: absolute;
     bottom: 0;
-    left: 95%;
+    left: 92%;
     right: 0%;
     top: 25%;
     background-color: var(--theme-toggleBackground);
@@ -126,7 +126,7 @@ nav {
 
     ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding: 0.4rem;
     }
 
@@ -422,13 +422,13 @@ Media Querys
     }
 
     .slider{
-        left: 90%;
+        left: 87%;
         top: 20%;
     }
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .naviButtons {
         visibility: hidden;
     }

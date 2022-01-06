@@ -25,7 +25,7 @@
 .slider {
   position: absolute;
   bottom: 0;
-  left: 95%;
+  left: 92%;
   right: 0%;
   top: 25%;
   background-color: var(--theme-toggleBackground);
@@ -129,8 +129,9 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 0.4rem;
 }
 
@@ -510,12 +511,12 @@ Media Querys
             flex-direction: column;
   }
   .slider {
-    left: 90%;
+    left: 87%;
     top: 20%;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .naviButtons {
     visibility: hidden;
   }
