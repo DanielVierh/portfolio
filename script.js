@@ -48,17 +48,18 @@ function showMobileNavbar() {
         mobileNavbar.classList.add('active');
     } else {
         hideMobileNavBackground();
-        window.scrollTo(0, lastYPos);
-        setTimeout(() => {
-            mobileNavbar.hidden = true;
-        }, 1000);
     }
 }
 
 mobileNavbar.addEventListener("click", hideMobileNavBackground);
+
 function hideMobileNavBackground() {
     mobileNavBarIsVisible = false;
     mobileNavbar.classList.remove('active');
+    window.scrollTo(0, lastYPos);
+    // setTimeout(() => {
+        mobileNavbar.hidden = true;
+    // }, 1000);
 }
 
 // Vue

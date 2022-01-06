@@ -328,12 +328,10 @@ aside {
     width: 0%;
     height: 100%;
     background-color: rgba(0, 0, 0, 1);
-    transition: 1s ease-in;
 }
 
 aside.active {
     width: 100%;
-    transition: 1s ease-in;
 }
 
 @supports (backdrop-filter: blur(30px)) {
@@ -361,7 +359,6 @@ aside.active li {
     margin: 2rem;
     border-radius: 10px;
     padding: 5px;
-    transition: 1s ease-in;
     color: white;
 }
 

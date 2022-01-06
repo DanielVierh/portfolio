@@ -363,14 +363,10 @@ aside {
   width: 0%;
   height: 100%;
   background-color: black;
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
 }
 
 aside.active {
   width: 100%;
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
 }
 
 @supports ((-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))) {
@@ -400,8 +396,6 @@ aside.active li {
   margin: 2rem;
   border-radius: 10px;
   padding: 5px;
-  -webkit-transition: 1s ease-in;
-  transition: 1s ease-in;
   color: white;
 }
 
