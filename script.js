@@ -2,9 +2,22 @@ const loadText = document.querySelector('.loading-text');
 const bg = document.querySelector('.mainContainer');
 const mobileNavbar = document.querySelector('aside');
 const toggleSwitch = document.getElementById("checkbox");
-//  mobileNavBackground = document.getElementById("mobileNavBackground");
+const nameField = document.getElementById("nameField");
+let charIterator = 0;
+let myname = 'Hi, I am Daniel';
 
+window.onload = () => {
+    charIterator = 0;
+    setInterval(writeName, 2000);
+}
 
+const writeName = () => {
+    if (charIterator < myname.length) {
+        nameField.innerHTML += myname.charAt(charIterator);
+        charIterator++;
+        setTimeout(writeName, 50);
+    }
+}
 
 
 // Switch Theme
@@ -18,6 +31,7 @@ function switchTheme(e) {
         document.documentElement.setAttribute('data-theme', 'dark');
     }
 }
+
 
 let lastYPos = 10;
 let mobileNavBarIsVisible = false;

@@ -4,6 +4,23 @@
   font-family: monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}
+
 [data-theme='light'] {
   --theme-mainBackgroundColor: linear-gradient(to right, #0a85ae, #042c3b);
   --theme-cardBackgroundColor: #096483;
@@ -21,6 +38,7 @@
 }
 
 .slider {
+  z-index: 2;
   position: absolute;
   bottom: 0;
   left: 92%;
@@ -39,9 +57,9 @@
 .slider::before {
   background-color: var(--theme-toggleRoundColor);
   content: '';
+  position: absolute;
   left: 13%;
   top: 13%;
-  position: absolute;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   width: 30px;
@@ -49,25 +67,12 @@
   border-radius: 50%;
 }
 
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: black;
-}
-
 .bg {
   background: rgba(0, 0, 0, 0.9);
   position: absolute;
   /* Um das Spacing links und rechts bei Blury zu minimieren */
-  top: -30;
-  left: -30;
+  top: 0%;
+  left: 0;
   width: calc(100vw + 60px);
   height: calc(100vh + 60px);
   z-index: -1;
@@ -435,18 +440,29 @@ aside.active li {
           transform: scale(0.9);
 }
 
+.writeAnmimat {
+  margin: 0;
+  font-size: 4rem;
+}
+
 .begrTextfield {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 320px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transform-origin: 70% 70%;
           transform-origin: 70% 70%;
 }
 
 .shake {
-  font-size: 3rem;
+  font-size: 5rem;
   -webkit-animation: shakeAnimation 8s infinite;
           animation: shakeAnimation 8s infinite;
+  margin: 0;
 }
 
 @-webkit-keyframes shakeAnimation {
@@ -455,26 +471,26 @@ aside.active li {
             transform: rotate(0deg);
   }
   10% {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
-    text-shadow: 10px 10px 25px black;
-  }
-  20% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  30% {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
-    text-shadow: 10px 10px 25px black;
-  }
-  40% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
+    text-shadow: 10px 10px 5px black;
   }
-  50% {
+  20% {
     -webkit-transform: rotate(5deg);
             transform: rotate(5deg);
+  }
+  30% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    text-shadow: 10px 10px 5px black;
+  }
+  40% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
   }
   60% {
     -webkit-transform: rotate(0deg);
@@ -492,26 +508,26 @@ aside.active li {
             transform: rotate(0deg);
   }
   10% {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
-    text-shadow: 10px 10px 25px black;
-  }
-  20% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  30% {
-    -webkit-transform: rotate(40deg);
-            transform: rotate(40deg);
-    text-shadow: 10px 10px 25px black;
-  }
-  40% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
+    text-shadow: 10px 10px 5px black;
   }
-  50% {
+  20% {
     -webkit-transform: rotate(5deg);
             transform: rotate(5deg);
+  }
+  30% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    text-shadow: 10px 10px 5px black;
+  }
+  40% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  50% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
   }
   60% {
     -webkit-transform: rotate(0deg);
@@ -534,10 +550,16 @@ Media Querys
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .slider {
-    left: 87%;
-    top: 20%;
+  .dualContainer ul li {
+    width: 100%;
+    margin: auto;
   }
 }
 
@@ -569,6 +591,18 @@ Media Querys
   #logoImg {
     width: 15px;
     height: 15px;
+  }
+  .slider {
+    left: 87%;
+    top: 20%;
+    width: 30px;
+    height: 30px;
+  }
+  .slider::before {
+    width: 20px;
+    height: 20px;
+    left: 16%;
+    top: 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */
