@@ -605,5 +605,9 @@ Media Querys
     left: 16%;
     top: 15%;
   }
+  .writeAnmimat {
+    margin: 0;
+    font-size: 2.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
