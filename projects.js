@@ -16,7 +16,7 @@ const projects = [
     {
         id: 3,
         title: 'Weather App',
-        desc: 'A cross-platform APP with an API connection to https://openweathermap.org/. <br> Created with HTML5, CSS3, JavaScript',
+        desc: 'A cross-platform APP with an API connection to https://openweathermap.org. <br> Created with HTML5, CSS3, JavaScript',
         link: 'https://danielvierh.github.io/wetter/',
         img: 'assets/projekte/wetter2.png',
     },
@@ -37,7 +37,7 @@ const projects = [
     {
         id: 6,
         title: 'Hangman Game',
-        desc: 'A cross-platform game, where you have to guess a Word.',
+        desc: 'A cross-platform game, where you have to guess a word.',
         link: 'https://danielvierh.github.io/hangman/',
         img: 'assets/projekte/hangman.png',
     },

@@ -4,18 +4,23 @@ const mobileNavbar = document.querySelector('aside');
 const toggleSwitch = document.getElementById("checkbox");
 const nameField = document.getElementById("nameField");
 let charIterator = 0;
-let myname = 'Hi, I am Daniel';
+let myname = 'Hi, I am <Daniel/>';
 
 window.onload = () => {
-    charIterator = 0;
-    setInterval(writeName, 2000);
+    setInterval(writeName, 5000);
 }
+
 
 const writeName = () => {
     if (charIterator < myname.length) {
         nameField.innerHTML += myname.charAt(charIterator);
         charIterator++;
-        setTimeout(writeName, 50);
+        setTimeout(writeName, 100);
+    }else{
+        setTimeout(() => {
+            nameField.innerHTML = '';
+            charIterator = 0;
+        }, 5000);
     }
 }
 
