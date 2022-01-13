@@ -414,7 +414,7 @@ aside.active li {
   background-color: rgba(255, 255, 255, 0.884);
   height: 100px;
   width: 80%;
-  max-width: 400px;
+  max-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,7 +607,7 @@ Media Querys
   }
   .writeAnmimat {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
