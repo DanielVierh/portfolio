@@ -49,20 +49,33 @@ body {
     transition: 0.4s;
     border-radius: 50%;
     overflow: hidden;
+
+    &::before{
+        background-color: var(--theme-toggleRoundColor);
+        content: '';
+
+        position: absolute;
+        left: 13%;
+        top: 13%;
+        transition: 0.4s;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
 }
 
-.slider::before {
-    background-color: var(--theme-toggleRoundColor);
-    content: '';
+// .slider::before {
+//     background-color: var(--theme-toggleRoundColor);
+//     content: '';
 
-    position: absolute;
-    left: 13%;
-    top: 13%;
-    transition: 0.4s;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
+//     position: absolute;
+//     left: 13%;
+//     top: 13%;
+//     transition: 0.4s;
+//     width: 30px;
+//     height: 30px;
+//     border-radius: 50%;
+// }
 
 .bg {
     background: rgba(0, 0, 0, 0.9);
@@ -203,15 +216,23 @@ main {
 .left {
     width: 50%;
     text-align: center;
+
+    img{
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+        margin: 30px;
+        border: 2px solid white;
+    }
 }
 
-.left img {
-    width: 80%;
-    height: auto;
-    border-radius: 50%;
-    margin: 30px;
-    border: 2px solid white;
-}
+// .left img {
+//     width: 80%;
+//     height: auto;
+//     border-radius: 50%;
+//     margin: 30px;
+//     border: 2px solid white;
+// }
 
 .right {
     width: 50%;
@@ -327,11 +348,32 @@ aside {
     width: 0%;
     height: 100%;
     background-color: rgba(0, 0, 0, 1);
+
+    &.active{
+        width: 100%;
+    }
+
+    &.active ul{
+        position: relative;
+        padding: 2rem;
+        top: 2%;
+        color: white;
+        z-index: 6;
+        list-style: none;
+        font-size: 2rem;
+    }
+
+    &.active li{
+        margin: 2rem;
+        border-radius: 10px;
+        padding: 5px;
+        color: white;
+    }
 }
 
-aside.active {
-    width: 100%;
-}
+// aside.active {
+//     width: 100%;
+// }
 
 @supports (backdrop-filter: blur(30px)) {
     aside.active {
@@ -344,22 +386,22 @@ aside.active {
     }
 }
 
-aside.active ul {
-    position: relative;
-    padding: 2rem;
-    top: 2%;
-    color: white;
-    z-index: 6;
-    list-style: none;
-    font-size: 2rem;
-}
+// aside.active ul {
+//     position: relative;
+//     padding: 2rem;
+//     top: 2%;
+//     color: white;
+//     z-index: 6;
+//     list-style: none;
+//     font-size: 2rem;
+// }
 
-aside.active li {
-    margin: 2rem;
-    border-radius: 10px;
-    padding: 5px;
-    color: white;
-}
+// aside.active li {
+//     margin: 2rem;
+//     border-radius: 10px;
+//     padding: 5px;
+//     color: white;
+// }
 
 .contactContainer {
     margin: auto;
@@ -399,7 +441,7 @@ aside.active li {
 
 .shake {
     font-size: 5rem;
-    animation: shakeAnimation 8s infinite;
+    animation: shakeAnimation 5s infinite;
     margin: 0;
 }
 
@@ -495,14 +537,21 @@ Media Querys
         top: 20%;
         width: 30px;
         height: 30px;
+
+        &::before{
+            width: 20px;
+            height: 20px;
+            left: 16%;
+            top: 15%;
+        }
     }
 
-    .slider::before {
-        width: 20px;
-        height: 20px;
-        left: 16%;
-        top: 15%;
-    }
+    // .slider::before {
+    //     width: 20px;
+    //     height: 20px;
+    //     left: 16%;
+    //     top: 15%;
+    // }
 
     .writeAnmimat{
         margin: 0;
