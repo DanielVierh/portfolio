@@ -412,14 +412,15 @@ aside.active li {
 .contactContainer {
   margin: auto;
   background-color: rgba(255, 255, 255, 0.884);
-  height: 100px;
-  width: 80%;
-  max-width: 300px;
+  height: 60px;
+  width: 60%;
+  max-width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -427,7 +428,7 @@ aside.active li {
 }
 
 .icon {
-  font-size: 5rem;
+  font-size: 2rem;
   color: white;
 }
 

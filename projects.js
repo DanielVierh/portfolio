@@ -1,10 +1,10 @@
 const projects = [
     {
         id: 1,
-        title: 'Countdown APP',
-        desc: 'A cross-platform APP. <br /> -You can set several countdown-envents. <br /> Technologies: HTML5, CSS3, JavaScript, jQuery-Mobile',
-        link: 'https://danielvierh.github.io/countdown-app/',
-        img: 'assets/projekte/countdown.png',
+        title: 'Vue.js Todo App',
+        desc: 'A simple todo App, created with Vue.js over CDN.',
+        link: 'https://danielvierh.github.io/todo-app/',
+        img: 'assets/projekte/todo.png',
     },
     {
         id: 2,
@@ -47,6 +47,13 @@ const projects = [
     desc: 'A mobile Web-App to track eaten food and burned calories.<br /><br />Notice: The best user experience is on mobile device',
     link: 'https://danielvierh.github.io/Food-Tracker/',
     img: 'assets/projekte/foodtrackerv2.png',
+},
+{
+    id: 8,
+    title: 'Countdown APP',
+    desc: 'A cross-platform APP. <br /> -You can set several countdown-envents. <br /> Technologies: HTML5, CSS3, JavaScript, jQuery-Mobile',
+    link: 'https://danielvierh.github.io/countdown-app/',
+    img: 'assets/projekte/countdown.png',
 },
 ];
 
