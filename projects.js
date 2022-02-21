@@ -7,6 +7,13 @@ const projects = [
         img: 'assets/projekte/todo.png',
     },
     {
+        id: 9,
+        title: 'Countdown',
+        desc: 'Countdown with ios simular scrollView element',
+        link: 'https://danielvierh.github.io/countdown2/',
+        img: 'assets/projekte/countdown2.png',
+    },
+    {
         id: 2,
         title: 'Memory Game',
         desc: 'A cross-platform memory game with different levels of difficulty. <br> Created with HTML5, CSS3, JavaScript',
@@ -42,19 +49,19 @@ const projects = [
         img: 'assets/projekte/hangman.png',
     },
     {
-    id: 7,
-    title: 'Food Tracker',
-    desc: 'A mobile Web-App to track eaten food and burned calories.<br /><br />Notice: The best user experience is on mobile device',
-    link: 'https://danielvierh.github.io/Food-Tracker/',
-    img: 'assets/projekte/foodtrackerv2.png',
-},
-{
-    id: 8,
-    title: 'Countdown APP',
-    desc: 'A cross-platform APP. <br /> -You can set several countdown-envents. <br /> Technologies: HTML5, CSS3, JavaScript, jQuery-Mobile',
-    link: 'https://danielvierh.github.io/countdown-app/',
-    img: 'assets/projekte/countdown.png',
-},
+        id: 7,
+        title: 'Food Tracker',
+        desc: 'A mobile Web-App to track eaten food and burned calories.<br /><br />Notice: The best user experience is on mobile device',
+        link: 'https://danielvierh.github.io/Food-Tracker/',
+        img: 'assets/projekte/foodtrackerv2.png',
+    },
+    {
+        id: 8,
+        title: 'Countdown APP',
+        desc: 'A cross-platform APP. <br /> -You can set several countdown-envents. <br /> Technologies: HTML5, CSS3, JavaScript, jQuery-Mobile',
+        link: 'https://danielvierh.github.io/countdown-app/',
+        img: 'assets/projekte/countdown.png',
+    },
 ];
 
 // {
