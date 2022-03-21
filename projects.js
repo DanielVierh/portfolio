@@ -7,6 +7,13 @@ const projects = [
         img: 'assets/projekte/todo.png',
     },
     {
+        id: 10,
+        title: 'Intervallfasten App',
+        desc: 'Created with Html5, CSS3, TypeScript, JavaScript',
+        link: 'https://danielvierh.github.io/intervallfasten24/',
+        img: 'assets/projekte/intervallfasten24.png',
+    },
+    {
         id: 9,
         title: 'Countdown',
         desc: 'Countdown with ios simular scrollView element',
